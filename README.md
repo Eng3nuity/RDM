@@ -21,8 +21,8 @@
 - **Coordinate:** Discord: "Squad A Garrison Stables" "Squad C Rally Hall" Whales ping/tag 
 - **If Behind:** Guerrilla – burn, scoop supplies, under-cellars, flip quick for first-capture bonuses  
 
-## Game Strategy
-### 💭 3 Whale-Led Squads (~8 per Squad from Legions)
+## 💭 **Game Strategy**
+### 3 Whale-Led Squads (~8 per Squad from Legions)
 - **Squad A** 🐳 Whale1 owns Royal Stables + 1 Sanctum + 2 Abbeys
 - **Squad B** 🐳 Whale2 owns Bell Tower + 1 Sanctum + 2 Abbeyslies
 - **Squad C** 🐳 Whale3 owns Merc Camp + Hall of Ref, phase 3 Swordshrine rallies
@@ -31,7 +31,8 @@
 - Whales lead captures/rallies with 1st march. 2nd/3rd march for destroying nearby enemy cities, defending secondary buildings, & defending squad cities
 - Fish join your squad's rallies and garrison/reinforce your squad's buildings first from a short safe distance. 2nd march for defending your squad's cities and collecting supplies
 - Garrison/reinforce buildings with the "Tank" troop ratio (70% infantry/30% cavalry/0% archers) when possible
-### 🐟 **Basics for Fish (Defenders/Supports)**
+
+### 🐟 Basics for Fish (Defenders/Supports)
 **Your Role:** Hold the line! Follow your Whale.
 1. **Teleport:** To your squad's safe zone (R4 will mark). Stay just out of sight but near your squad's buildings, don't cluster together
 1. **March Speedups:** Use free ones to arrive FAST for garrisons.
@@ -40,9 +41,9 @@
 1. **Scoop Arsenal Supplies:** Every drop = points. Prioritize supplies capture after garrisons secure
 1. **Spare Marches:** Pick up supplies, capture under-cellars, reinforce other squad members
 
-**Never:** Solo attack, cluster near other squad members or buildings, exit buildings that you've reinforced (unless asked)
+**Never:** Solo attack, cluster near other squad members or buildings, exit buildings that you've reinforced (unless asked to)
 
-### 🐳 **Basics for the 3 Whales (Attack Leaders)**
+### 🐳 Basics for the 3 Whales (Attack Leaders)
 **Your Role:** Capture, rally, burn, disrupt. Use 1st march main, 2nd march for burns/defense
 1. **Teleport/March:** Talk to your squad, let them know when you launch rallys or need support
 1. **Phase 1:** Rush capture your squad buildings (Stables/Bell/Sanctums/Abbeys). Garrison quick --> clear out invaders --> move to help others
