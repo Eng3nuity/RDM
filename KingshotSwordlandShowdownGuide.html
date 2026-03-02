@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KingshotSwordlandShowdownGuide.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%F0%9F%97%A1-kingshot-swordland-showdown-guide-by-engenuity-%E2%9A%94">🗡 Kingshot Swordland Showdown Guide by @engenuity ⚔</h1>
+<p><strong>Welcome, Legion! This is our detailed guide to dominate Swordland.</strong> We're splitting into <strong>3 Whale-led Squads</strong> - each whale leads a handful of fish for clear responsibilities. Let's focus on nailing basics and teamwork for now, with advanced strategy happening later...winning will happen naturally as we improve 🏆. Be online 10 mins early, join Discord voice for coordination (English-speakers)</p>
+<h2 id="%F0%9F%93%9A-quick-guide">📚 <strong>Quick Guide</strong></h2>
+<ul>
+<li><strong>No Losses:</strong> All troops heal free – fight aggressive!</li>
+<li><strong>Pre-battle Preparation:</strong>
+<ul>
+<li>Recall all marches home. Heal infirmary 100%</li>
+<li>Activate buffs/gear/heroes, use Howard, Gordon, Quinn, and Amadeus for defense</li>
+<li>Set defense march presets for 70% infantry/30% cavalry/0% archers (if possible)</li>
+<li>Join Discord voice (English speakers) 5 minutes before start (commit full 60 mins)</li>
+</ul>
+</li>
+<li><strong>In-game Freebies</strong>
+<ul>
+<li>5 free initial march speedups (regenerate 1/min, max 30)</li>
+<li>1 free initial teleport (regenerate every 10 min --&gt; 5 min w/ Stables, max 1). Plan, don't spam!</li>
+<li>Initial free healing speedups (regenerate ?/min, max unknown). If you're a whale and get wiped, use the 12-minute healing reset trick 👇🏽</li>
+<li>Healing Reset: Tap scoreboard banner (top screen) --&gt; &quot;Leave Battlefield&quot; --&gt; free full heal --&gt; rejoin after 12 min cooldown</li>
+</ul>
+</li>
+<li><strong>City Burn Tactic:</strong> If a city is destroyed --&gt; garrisoned troops teleport home with city (resets their garrisoned troops back to their city)</li>
+<li><strong>Counter the Burn Tactic:</strong>
+<ul>
+<li><strong>Troop Dance</strong> to dodge incoming attacks: send city troops to camp next to you --&gt; recall --&gt; teleport away safe. Garrisons stay!</li>
+<li>Spread out – don't cluster. Garrisoned fish are safer spread between buildings, not next to them. Starve the enemy of teleports ⚡</li>
+</ul>
+</li>
+<li><strong>Coordinate:</strong> Discord: &quot;Squad A Garrison Stables&quot; &quot;Squad C Rally Hall&quot; Whales ping/tag</li>
+<li><strong>If Behind:</strong> Guerrilla – burn, scoop supplies, under-cellars, flip quick for first-capture bonuses</li>
+</ul>
+<h2 id="%F0%9F%8F%A8-buildings-list--effects-earn-points">🏨 <strong>Buildings List &amp; Effects</strong> (Earn Points)</h2>
+<table>
+<thead>
+<tr>
+<th>Building</th>
+<th>Effect</th>
+<th>Phase</th>
+<th>Why Important</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Royal Stables</strong></td>
+<td>50% teleport cooldown reduction (10 min --&gt; 5 min)</td>
+<td>1</td>
+<td>Faster moves for everyone – PRIORITY #1!</td>
+</tr>
+<tr>
+<td><strong>Bell Tower</strong></td>
+<td>50% faster capture time</td>
+<td>1</td>
+<td>Quick flips on contested spots – PRIORITY #2!</td>
+</tr>
+<tr>
+<td><strong>Sanctums</strong> (2 total)</td>
+<td>Steady Relic Points over time</td>
+<td>1</td>
+<td>Constant scoring – hold both for lead</td>
+</tr>
+<tr>
+<td><strong>Abbeys</strong> (4 total)</td>
+<td>Moderate steady Relic Points</td>
+<td>1</td>
+<td>Backup scoring – grab extras</td>
+</tr>
+<tr>
+<td><strong>Hall of Reformation</strong></td>
+<td>+Attack &amp; Damage Resistance buffs (whole team)</td>
+<td>2</td>
+<td>Makes us stronger – rally early Phase 2!</td>
+</tr>
+<tr>
+<td><strong>Swordshrine</strong> (Center)</td>
+<td>Highest continuous Relic Points</td>
+<td>2</td>
+<td>Game-changer – contest with rallies Phase 2-3</td>
+</tr>
+<tr>
+<td><strong>Mercenary Camp</strong></td>
+<td>Send auto-mercs to hit enemy buildings</td>
+<td>2</td>
+<td>Pressure without risk – weaken their holds</td>
+</tr>
+<tr>
+<td><strong>Under-cellars</strong> (Random waves)</td>
+<td>Big burst Relic Points</td>
+<td>3</td>
+<td>Swing games – hunt on minimap (magnifying glass)</td>
+</tr>
+<tr>
+<td><strong>Arsenal Supplies</strong></td>
+<td>Free Relic Points drops</td>
+<td>All</td>
+<td>Scoop EVERY ONE from lost buildings!</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Win Condition:</strong> Most <strong>Relic Points</strong> after 60 mins (first captures + holds + supplies + under-cellars).</p>
+<h2 id="game-strategy">Game Strategy</h2>
+<h3 id="%F0%9F%92%AD-3-whale-led-squads-8-per-squad-from-legions">💭 3 Whale-Led Squads (~8 per Squad from Legions)</h3>
+<ul>
+<li><strong>Squad A</strong> 🐳 Whale1 owns Royal Stables + 1 Sanctum + 2 Abbeys</li>
+<li><strong>Squad B</strong> 🐳 Whale2 owns Bell Tower + 1 Sanctum + 2 Abbeyslies</li>
+<li><strong>Squad C</strong> 🐳 Whale3 owns Merc Camp + Hall of Ref, phase 3 Swordshrine rallies</li>
+</ul>
+<h3 id="squad-strategy-everyone">Squad Strategy (everyone)</h3>
+<ul>
+<li>Whales lead captures/rallies with 1st march. 2nd/3rd march for destroying nearby enemy cities, defending secondary buildings, &amp; defending squad cities</li>
+<li>Fish join your squad's rallies and garrison/reinforce your squad's buildings first from a short safe distance. 2nd march for defending your squad's cities and collecting supplies</li>
+<li>Garrison/reinforce buildings with the &quot;Tank&quot; troop ratio (70% infantry/30% cavalry/0% archers) when possible</li>
+</ul>
+<h3 id="%F0%9F%90%9F-basics-for-fish-defenderssupports">🐟 <strong>Basics for Fish (Defenders/Supports)</strong></h3>
+<p><strong>Your Role:</strong> Hold the line! Follow your Whale.</p>
+<ol>
+<li><strong>Teleport:</strong> To your squad's safe zone (R4 will mark). Stay just out of sight but near your squad's buildings, don't cluster together</li>
+<li><strong>March Speedups:</strong> Use free ones to arrive FAST for garrisons.</li>
+<li><strong>Garrison Everything:</strong> After whale captures --&gt; garrison IMMEDIATELY</li>
+<li><strong>Reinforce:</strong> ALWAYS join ally garrisons. Stack &gt; solo</li>
+<li><strong>Scoop Arsenal Supplies:</strong> Every drop = points. Prioritize supplies capture after garrisons secure</li>
+<li><strong>Spare Marches:</strong> Pick up supplies, capture under-cellars, reinforce other squad members</li>
+</ol>
+<p><strong>Never:</strong> Solo attack, cluster near other squad members or buildings, exit buildings that you've reinforced (unless asked)</p>
+<h3 id="%F0%9F%90%B3-basics-for-the-3-whales-attack-leaders">🐳 <strong>Basics for the 3 Whales (Attack Leaders)</strong></h3>
+<p><strong>Your Role:</strong> Capture, rally, burn, disrupt. Use 1st march main, 2nd march for burns/defense</p>
+<ol>
+<li><strong>Teleport/March:</strong> Talk to your squad, let them know when you launch rallys or need support</li>
+<li><strong>Phase 1:</strong> Rush capture your squad buildings (Stables/Bell/Sanctums/Abbeys). Garrison quick --&gt; clear out invaders --&gt; move to help others</li>
+<li><strong>Burns:</strong> 2nd march on enemy cities near you. Force their garrisons home!</li>
+<li><strong>Phase 2:</strong> Rally <strong>Hall</strong> first (buffs). Then <strong>Swordshrine</strong> (you START, squad joins). Send Mercs on enemy holds</li>
+<li><strong>Phase 3:</strong> Push Swordshrine rallies (first capture gives a big bonus). Hunt under-cellars w/ squad. Rally enemy buildings for supply drops that fish can collect</li>
+<li><strong>Rotations:</strong> Healing Reset/Troop Dance to stay strong</li>
+<li><strong>City Killers:</strong> You + dolphins = burn squad. Target enemy whales first</li>
+</ol>
+<h2 id="%F0%9F%93%8A-alliance-phases-60-min-battle">📊 <strong>Alliance Phases (60 Min Battle)</strong></h2>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Time</th>
+<th>Squad Focus</th>
+<th>All Calls</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1: Open Rush</strong></td>
+<td>0-15 min</td>
+<td>Squad A: Stables/Sanctum/Abbeys<br>Bravo: Bell/Sanctum/Abbeys<br>Charlie: Help + Merc</td>
+<td>Capture --&gt; Garrison/Reinforce<br>Burn enemies! Scoop supplies</td>
+</tr>
+<tr>
+<td><strong>2: Buff &amp; Push</strong></td>
+<td>15-45 min</td>
+<td>Hold bases (split defs)<br>Charlie leads Hall/Swordshrine/Merc</td>
+<td>Rally Hall --&gt; Swordshrine<br>Merc pressure. Cross-reinforce</td>
+</tr>
+<tr>
+<td><strong>3: Chaos Close</strong></td>
+<td>45-60 min</td>
+<td>Mobile: Under-cellars + Swordshrine</td>
+<td>Hunt cellars (minimap)<br>Rally enemies for drops</td>
+</tr>
+</tbody>
+</table>
+<p><strong>🔥⚔ Squads alive = Victory! Questions --&gt; R4/Discord. Let's CRUSH! ⚔🔥</strong></p>
+
+</body>
+</html>
