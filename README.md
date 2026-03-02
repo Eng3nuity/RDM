@@ -28,8 +28,8 @@
 - **Squad C** 🐳 Whale3 owns Merc Camp + Hall of Ref, phase 3 Swordshrine rallies
   
 ### Squad Strategy (everyone)
-- Whales lead captures/rallies with 1st march. 2nd/3rd march for destroying nearby enemy cities, defending secondary buildings, & defending squad cities
-- Fish join your squad's rallies and garrison/reinforce your squad's buildings first from a short safe distance. 2nd march for defending your squad's cities and collecting supplies
+- Whales: lead captures/rallies with 1st march. 2nd/3rd march for destroying nearby enemy cities, defending secondary buildings, & defending squad cities
+- Fish: join your squad's rallies and garrison/reinforce your squad's buildings from a short, safe distance. 2nd march for defending your squad's cities and collecting supplies
 - Garrison/reinforce buildings with the "Tank" troop ratio (70% infantry/30% cavalry/0% archers) when possible
 
 ### 🐟 Basics for Fish (Defenders/Supports)
