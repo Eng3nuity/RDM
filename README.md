@@ -24,7 +24,7 @@
 ## 💭 **Game Strategy**
 ### 3 Whale-Led Squads (~8 per Squad from Legions)
 - **Squad A** 🐳 Whale1 owns Royal Stables + 1 Sanctum + 2 Abbeys
-- **Squad B** 🐳 Whale2 owns Bell Tower + 1 Sanctum + 2 Abbeyslies
+- **Squad B** 🐳 Whale2 owns Bell Tower + 1 Sanctum + 2 Abbeys
 - **Squad C** 🐳 Whale3 owns Merc Camp + Hall of Ref, phase 3 Swordshrine rallies
   
 ### Squad Strategy (everyone)
