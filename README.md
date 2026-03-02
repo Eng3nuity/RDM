@@ -21,22 +21,6 @@
 - **Coordinate:** Discord: "Squad A Garrison Stables" "Squad C Rally Hall" Whales ping/tag 
 - **If Behind:** Guerrilla – burn, scoop supplies, under-cellars, flip quick for first-capture bonuses  
 
-
-## 🏨 **Buildings List & Effects** (Earn Points)
-| Building | Effect | Phase | Why Important |
-|----------|--------|-------|---------------|
-| **Royal Stables** | 50% teleport cooldown reduction (10 min --> 5 min) | 1 | Faster moves for everyone – PRIORITY #1! |
-| **Bell Tower** | 50% faster capture time | 1 | Quick flips on contested spots – PRIORITY #2! |
-| **Sanctums** (2 total) | Steady Relic Points over time | 1 | Constant scoring – hold both for lead |
-| **Abbeys** (4 total) | Moderate steady Relic Points | 1 | Backup scoring – grab extras |
-| **Hall of Reformation** | +Attack & Damage Resistance buffs (whole team) | 2 | Makes us stronger – rally early Phase 2! |
-| **Swordshrine** (Center) | Highest continuous Relic Points | 2 | Game-changer – contest with rallies Phase 2-3 |
-| **Mercenary Camp** | Send auto-mercs to hit enemy buildings | 2 | Pressure without risk – weaken their holds |
-| **Under-cellars** (Random waves) | Big burst Relic Points | 3 | Swing games – hunt on minimap (magnifying glass) |
-| **Arsenal Supplies** | Free Relic Points drops | All | Scoop EVERY ONE from lost buildings! |
-
-**Win Condition:** Most **Relic Points** after 60 mins (first captures + holds + supplies + under-cellars).
-
 ## Game Strategy
 ### 💭 3 Whale-Led Squads (~8 per Squad from Legions)
 - **Squad A** 🐳 Whale1 owns Royal Stables + 1 Sanctum + 2 Abbeys
@@ -74,5 +58,20 @@
 | **1: Open Rush** | 0-15 min | Squad A: Stables/Sanctum/Abbeys<br>Bravo: Bell/Sanctum/Abbeys<br>Charlie: Help + Merc | Capture --> Garrison/Reinforce<br>Burn enemies! Scoop supplies |
 | **2: Buff & Push** | 15-45 min | Hold bases (split defs)<br>Charlie leads Hall/Swordshrine/Merc | Rally Hall --> Swordshrine<br>Merc pressure. Cross-reinforce |
 | **3: Chaos Close** | 45-60 min | Mobile: Under-cellars + Swordshrine | Hunt cellars (minimap)<br>Rally enemies for drops |
+
+## 🏨 **Buildings List & Effects** (Earn Points)
+| Building | Effect | Phase | Why Important |
+|----------|--------|-------|---------------|
+| **Royal Stables** | 50% teleport cooldown reduction (10 min --> 5 min) | 1 | Faster moves for everyone – PRIORITY #1! |
+| **Bell Tower** | 50% faster capture time | 1 | Quick flips on contested spots – PRIORITY #2! |
+| **Sanctums** (2 total) | Steady Relic Points over time | 1 | Constant scoring – hold both for lead |
+| **Abbeys** (4 total) | Moderate steady Relic Points | 1 | Backup scoring – grab extras |
+| **Hall of Reformation** | +Attack & Damage Resistance buffs (whole team) | 2 | Makes us stronger – rally early Phase 2! |
+| **Swordshrine** (Center) | Highest continuous Relic Points | 2 | Game-changer – contest with rallies Phase 2-3 |
+| **Mercenary Camp** | Send auto-mercs to hit enemy buildings | 2 | Pressure without risk – weaken their holds |
+| **Under-cellars** (Random waves) | Big burst Relic Points | 3 | Swing games – hunt on minimap (magnifying glass) |
+| **Arsenal Supplies** | Free Relic Points drops | All | Scoop EVERY ONE from lost buildings! |
+
+**Win Condition:** Most **Relic Points** after 60 mins (first captures + holds + supplies + under-cellars).
 
 **🔥⚔ Squads alive = Victory! Questions --> R4/Discord. Let's CRUSH! ⚔🔥**
